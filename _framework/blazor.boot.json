@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "PersonalLanding",
   "resources": {
-    "hash": "sha256-RQ4lsbgdcoU1T7xGKbb302+3S8ybiu/9CSrRBPcr3qE=",
+    "hash": "sha256-qJ8w8Af95xqOokBOtzXTrEkbeUASStrmp3SEX+WfQ8k=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Components.mix9o0m8ef.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.sxfdi1rlxf.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -34,7 +34,7 @@
       "System.Text.Json.15h333vn2t.wasm": "System.Text.Json.wasm",
       "System.Text.RegularExpressions.5gjltihx5v.wasm": "System.Text.RegularExpressions.wasm",
       "System.Private.CoreLib.pc1q239mk1.wasm": "System.Private.CoreLib.wasm",
-      "PersonalLanding.3q18ldup4b.wasm": "PersonalLanding.wasm",
+      "PersonalLanding.0vqzczac0k.wasm": "PersonalLanding.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.l4ptthxatg.js": "dotnet.native.js",
       "dotnet.native.d2w7colv7e.wasm": "dotnet.native.wasm",
@@ -91,7 +91,7 @@
       "System.Text.Encodings.Web.9rjk8as0i7.wasm": "sha256-+y7W1KnwkH6Qwrz33TSxWAn666Cbuzvn6QwDB/OpQgI=",
       "System.Text.Json.15h333vn2t.wasm": "sha256-ewfAWl8DuTyvZPCN4KtKaK4zXECxzH+IWRudmvzCogI=",
       "System.Text.RegularExpressions.5gjltihx5v.wasm": "sha256-tWq9vht0rY9iM6tvHI4CaV2Nogm0sR+EJEOy72TVrIk=",
-      "PersonalLanding.3q18ldup4b.wasm": "sha256-RZztXh4Nih+prUfvTBSrdyJXsHcDaHVvb4JzbQZ+3gw="
+      "PersonalLanding.0vqzczac0k.wasm": "sha256-vAozOARHJu1ZWYljtP4ZZUoTLH0HXIOlGGCVn3cDmoY="
     }
   },
   "cacheBootResources": true,
