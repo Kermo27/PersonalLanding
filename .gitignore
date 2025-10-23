@@ -422,3 +422,5 @@ FodyWeavers.xsd
 /obj/
 bin/
 obj/
+/PersonalLanding/bin/
+/PersonalLanding/obj/
