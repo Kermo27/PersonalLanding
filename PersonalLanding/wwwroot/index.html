@@ -10,10 +10,40 @@
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
-    <link href="OnePageShowcase.styles.css" rel="stylesheet" />
+    <link href="PersonalLanding.styles.css" rel="stylesheet" />
 </head>
 
+<script>
+    function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('active');
+    }
+
+    window.addEventListener('load', () => {
+        const loader = document.getElementById('app-loader');
+        if (loader) {
+            // Minimum loader time in milliseconds (e.g., 2 seconds)
+            const minLoaderTime = 2000;
+
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                loader.style.transition = 'opacity 0.5s';
+                setTimeout(() => loader.style.display = 'none', 500); // match fade-out duration
+            }, minLoaderTime);
+        }
+    });
+</script>
+
 <body>
+    <div id="app-loader">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p class="loader-text">Loading...</p>
+    </div>
+    
     <div id="app">
         <svg class="loading-progress">
             <circle r="40%" cx="50%" cy="50%" />

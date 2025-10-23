@@ -1,9 +1,16 @@
+/* ============================= */
+/*       RESET & TYPOGRAPHY      */
+/* ============================= */
 html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     scroll-behavior: smooth;
     background-color: #0a0a0a;
     color: #e0e0e0;
+}
+
+h1, h2, h3 {
+    margin: 0;
 }
 
 h2 {
@@ -13,6 +20,13 @@ h2 {
     color: #6a11cb;
 }
 
+code {
+    color: #ff6b9d;
+}
+
+/* ============================= */
+/*          NAVIGATION           */
+/* ============================= */
 nav {
     position: fixed;
     top: 0;
@@ -22,45 +36,62 @@ nav {
     color: white;
     z-index: 1000;
     box-shadow: 0 2px 6px rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 0;
 }
 
-nav ul {
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-links {
     display: flex;
     list-style: none;
-    padding: 0;
-    margin: 0;
     gap: 40px;
-    justify-content: center;
+    margin: 0 auto;
 }
 
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
+.nav-links li a {
     color: white;
     text-decoration: none;
     font-weight: 600;
     padding: 0.5rem 1rem;
-    display: block;
 }
 
-nav ul li a:hover {
+.nav-links li a:hover {
     color: #2575fc;
 }
 
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* ============================= */
+/*             HERO              */
+/* ============================= */
 header.hero {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
     color: white;
-    text-align: center;
 }
 
 header.hero .btn {
@@ -78,12 +109,18 @@ header.hero .btn:hover {
     background-color: #6a11cb;
 }
 
+/* ============================= */
+/*             SECTIONS          */
+/* ============================= */
 .section {
     padding: 80px 20px;
     max-width: 1200px;
     margin: auto;
 }
 
+/* ============================= */
+/*               CARDS           */
+/* ============================= */
 .cards, .pricing-cards {
     display: flex;
     justify-content: center;
@@ -104,7 +141,9 @@ header.hero .btn:hover {
 }
 
 .card i {
-    margin-bottom: 15px;
+    display: block;          /* Center icon */
+    margin: 0 auto 15px;
+    text-align: center;
     color: #2575fc;
 }
 
@@ -113,6 +152,9 @@ header.hero .btn:hover {
     box-shadow: 0 8px 25px rgba(37, 117, 252, 0.3);
 }
 
+/* ============================= */
+/*             FORMS             */
+/* ============================= */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -120,7 +162,8 @@ header.hero .btn:hover {
     gap: 15px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     max-width: 400px;
     padding: 10px;
@@ -130,17 +173,8 @@ header.hero .btn:hover {
     color: #e0e0e0;
 }
 
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #2a2a2a;
-    background-color: #1a1a1a;
-    color: #e0e0e0;
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
     outline: none;
     border-color: #2575fc;
 }
@@ -161,6 +195,9 @@ header.hero .btn:hover {
     transform: scale(1.05);
 }
 
+/* ============================= */
+/*            ANIMATIONS          */
+/* ============================= */
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -176,126 +213,168 @@ header.hero .btn:hover {
     animation: fadeInUp 0.8s forwards;
 }
 
-/* Responsive */
+/* ============================= */
+/*           RESPONSIVE           */
+/* ============================= */
 @media(max-width: 768px) {
     .cards, .pricing-cards {
         flex-direction: column;
         align-items: center;
     }
 
-    nav ul li {
-        margin: 10px;
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 }
 
-h1:focus {
+/* Loader container */
+#app-loader {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0a0a;
+    z-index: 9999;
+}
+
+/* Spinner circles */
+.spinner {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.spinner div {
+    position: absolute;
+    border: 4px solid #2575fc; /* primary color */
+    opacity: 1;
+    border-radius: 50%;
+    animation: spinnerAnim 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.spinner div:nth-child(2) {
+    animation-delay: -0.3s;
+    border-color: #6a11cb; /* secondary color */
+}
+.spinner div:nth-child(3) {
+    animation-delay: -0.6s;
+}
+.spinner div:nth-child(4) {
+    animation-delay: -0.9s;
+}
+
+@keyframes spinnerAnim {
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+    }
+}
+
+/* Loader text */
+.loader-text {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
     outline: none;
 }
 
-a, .btn-link {
+/* Pricing Cards */
+.pricing-card {
+    position: relative;
+    border: 1px solid #2a2a2a;
+    background-color: #111;
+    transition: 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(37, 117, 252, .3);
+}
+
+.price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 15px 0;
     color: #2575fc;
 }
 
-.btn-primary {
+.pricing-card ul {
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+}
+
+.pricing-card ul li {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    opacity: .8;
+}
+
+.featured {
+    border: 2px solid #2575fc;
+    background: linear-gradient(145deg, #1a1a2e, #0f3460);
+}
+
+.badge {
+    background: #6a11cb;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: .75rem;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
     color: #fff;
-    background-color: #2575fc;
-    border-color: #1a5ed1;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem #1a1a1a, 0 0 0 0.25rem #2575fc;
+/* Pricing Button */
+.btn-pricing {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 26px;
+    border-radius: 30px;
+    color: #fff;
+    background: #2575fc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.25s ease, transform 0.25s;
 }
 
-.content {
-    padding-top: 1.1rem;
-}
-
-.valid.modified:not([type=checkbox]) {
-    outline: 1px solid #26b050;
-}
-
-.invalid {
-    outline: 1px solid red;
-}
-
-.validation-message {
-    color: #ff4444;
+.btn-pricing:hover {
+    transform: scale(1.05);
+    background: #6a11cb;
 }
 
 #blazor-error-ui {
-    color-scheme: dark;
-    background: #2a1a1a;
-    bottom: 0;
-    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.5);
-    box-sizing: border-box;
-    display: none;
-    left: 0;
-    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
-
-    #blazor-error-ui .dismiss {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
-
-.blazor-error-boundary {
-    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNDkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIG92ZXJmbG93PSJoaWRkZW4iPjxkZWZzPjxjbGlwUGF0aCBpZD0iY2xpcDAiPjxyZWN0IHg9IjIzNSIgeT0iNTEiIHdpZHRoPSI1NiIgaGVpZ2h0PSI0OSIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMCkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMzUgLTUxKSI+PHBhdGggZD0iTTI2My41MDYgNTFDMjY0LjcxNyA1MSAyNjUuODEzIDUxLjQ4MzcgMjY2LjYwNiA1Mi4yNjU4TDI2Ny4wNTIgNTIuNzk4NyAyNjcuNTM5IDUzLjYyODMgMjkwLjE4NSA5Mi4xODMxIDI5MC41NDUgOTIuNzk1IDI5MC42NTYgOTIuOTk2QzI5MC44NzcgOTMuNTEzIDI5MSA5NC4wODE1IDI5MSA5NC42NzgyIDI5MSA5Ny4wNjUxIDI4OS4wMzggOTkgMjg2LjYxNyA5OUwyNDAuMzgzIDk5QzIzNy45NjMgOTkgMjM2IDk3LjA2NTEgMjM2IDk0LjY3ODIgMjM2IDk0LjM3OTkgMjM2LjAzMSA5NC4wODg2IDIzNi4wODkgOTMuODA3MkwyMzYuMzM4IDkzLjAxNjIgMjM2Ljg1OCA5Mi4xMzE0IDI1OS40NzMgNTMuNjI5NCAyNTkuOTYxIDUyLjc5ODUgMjYwLjQwNyA1Mi4yNjU4QzI2MS4yIDUxLjQ4MzcgMjYyLjI5NiA1MSAyNjMuNTA2IDUxWk0yNjMuNTg2IDY2LjAxODNDMjYwLjczNyA2Ni4wMTgzIDI1OS4zMTMgNjcuMTI0NSAyNTkuMzEzIDY5LjMzNyAyNTkuMzEzIDY5LjYxMDIgMjU5LjMzMiA2OS44NjA4IDI1OS4zNzEgNzAuMDg4N0wyNjEuNzk1IDg0LjAxNjEgMjY1LjM4IDg0LjAxNjEgMjY3LjgyMSA2OS43NDc1QzI2Ny44NiA2OS43MzA5IDI2Ny44NzkgNjkuNTg3NyAyNjcuODc5IDY5LjMxNzkgMjY3Ljg3OSA2Ny4xMTgyIDI2Ni40NDggNjYuMDE4MyAyNjMuNTg2IDY2LjAxODNaTTI2My41NzYgODYuMDU0N0MyNjEuMDQ5IDg2LjA1NDcgMjU5Ljc4NiA4Ny4zMDA1IDI1OS43ODYgODkuNzkyMSAyNTkuNzg2IDkyLjI4MzcgMjYxLjA0OSA5My41Mjk1IDI2My41NzYgOTMuNTI5NSAyNjYuMTE2IDkzLjUyOTUgMjY3LjM4NyA5Mi4yODM3IDI2Ny4zODcgODkuNzkyMSAyNjcuMzg3IDg3LjMwMDUgMjY2LjExNiA4Ni4wNTQ3IDI2My41NzYgODYuMDU0N1oiIGZpbGw9IiNGRkU1MDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvZz48L3N2Zz4=) no-repeat 1rem/1.8rem, #b32121;
-    padding: 1rem 1rem 1rem 3.7rem;
-    color: white;
-}
-
-.blazor-error-boundary::after {
-    content: "An error has occurred."
-}
-
-.loading-progress {
-    position: relative;
-    display: block;
-    width: 8rem;
-    height: 8rem;
-    margin: 20vh auto 1rem auto;
-}
-
-.loading-progress circle {
-    fill: none;
-    stroke: #2a2a2a;
-    stroke-width: 0.6rem;
-    transform-origin: 50% 50%;
-    transform: rotate(-90deg);
-}
-
-.loading-progress circle:last-child {
-    stroke: #2575fc;
-    stroke-dasharray: calc(3.141 * var(--blazor-load-percentage, 0%) * 0.8), 500%;
-    transition: stroke-dasharray 0.05s ease-in-out;
-}
-
-.loading-progress-text {
-    position: absolute;
-    text-align: center;
-    font-weight: bold;
-    inset: calc(20vh + 3.25rem) 0 auto 0.2rem;
-    color: #e0e0e0;
-}
-
-.loading-progress-text:after {
-    content: var(--blazor-load-percentage-text, "Loading");
-}
-
-code {
-    color: #ff6b9d;
-}
-
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-    color: #666;
-    text-align: end;
-}
-
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-    text-align: start;
+    display: none !important; /* Completely hide Blazor's default error UI */
 }

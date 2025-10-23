@@ -199,8 +199,6 @@
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/icudt_CJK.tjcz0u77k5.dat
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/icudt_EFIGS.tptq2av103.dat
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/icudt_no_CJK.lfu7j35m59.dat
-/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/PersonalLanding.bfce07s6c2.wasm
-/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/PersonalLanding.6qhljogd8d.pdb
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/blazor.webassembly.js.gz
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/Microsoft.AspNetCore.Authorization.50odlujk1g.wasm.gz
@@ -403,8 +401,6 @@
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/icudt_CJK.tjcz0u77k5.dat.gz
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/icudt_EFIGS.tptq2av103.dat.gz
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/icudt_no_CJK.lfu7j35m59.dat.gz
-/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/PersonalLanding.bfce07s6c2.wasm.gz
-/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/PersonalLanding.6qhljogd8d.pdb.gz
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json.gz
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/PersonalLanding.staticwebassets.runtime.json
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/PersonalLanding.staticwebassets.endpoints.json
@@ -818,8 +814,6 @@
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/scopedcss/projectbundle/PersonalLanding.bundle.scp.css
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/blazor.build.boot-extension.json
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/blazor.boot.json
-/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/t5n9m8x6ye-cfgmg520s9.gz
-/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/o4c1ah2vbb-v0xjlthjlk.gz
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/6acc6uxcf1-bqjiyaj88i.gz
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/rzjnkwr6bl-c2jlpeoesf.gz
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/9s8az794z9-erw9l3u2r3.gz
@@ -864,7 +858,6 @@
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/ozivjfbh97-8pmfdhi8k7.gz
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/u9cs9xh225-63fj8s7r0e.gz
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/6dgt0hn97q-jx6nvlgk9g.gz
-/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/leyoex3th1-vnc9dmv67p.gz
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/jvsy3opxl1-md9yvkcqlf.gz
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/p49sy0x4lj-c53gdlf76e.gz
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/bu3nfzcnm6-c53gdlf76e.gz
@@ -1068,9 +1061,6 @@
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/ef7km228jd-tjcz0u77k5.gz
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/28jwyu7lb9-tptq2av103.gz
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/bn8e6u9p9h-lfu7j35m59.gz
-/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/thkl0cjaol-bfce07s6c2.gz
-/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/hgqbfxteev-6qhljogd8d.gz
-/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/aar68p3yqh-1as6vh7g77.gz
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/staticwebassets.build.json
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/staticwebassets.build.json.cache
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/staticwebassets.development.json
@@ -1080,3 +1070,13 @@
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/refint/PersonalLanding.dll
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/PersonalLanding.pdb
 /home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/ref/PersonalLanding.dll
+/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/PersonalLanding.sourcelink.json
+/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/o4c1ah2vbb-oxgcfpsdoi.gz
+/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/PersonalLanding.uvk1ynw3ad.wasm
+/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/PersonalLanding.qz3j1lg38v.pdb
+/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/PersonalLanding.uvk1ynw3ad.wasm.gz
+/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/bin/Debug/net9.0/wwwroot/_framework/PersonalLanding.qz3j1lg38v.pdb.gz
+/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/thkl0cjaol-uvk1ynw3ad.gz
+/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/hgqbfxteev-qz3j1lg38v.gz
+/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/aar68p3yqh-8m8iz81ds9.gz
+/home/kermo/RiderProjects/OnePageShowcase/PersonalLanding/obj/Debug/net9.0/compressed/t5n9m8x6ye-88t4b31ita.gz
