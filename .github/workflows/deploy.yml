@@ -16,7 +16,7 @@ jobs:
           dotnet-version: '9.0.x'
           
       - name: Publish .NET Project
-        run: dotnet publish PersonalLanding.csproj -c Release -o release --nologo
+        run: dotnet publish ./PersonalLanding/PersonalLanding.csproj -c Release -o release --nologo
 
       - name: Change base href in index.html
         run: sed -i 's|<base href="/" />|<base href="/PersonalLanding/" />|g' release/wwwroot/index.html
